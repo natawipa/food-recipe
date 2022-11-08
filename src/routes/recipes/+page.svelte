@@ -7,7 +7,7 @@
 
 
   const handleSelect = async (event) =>{
-    const url = (`https://api.spoonacular.com/recipes/complexSearch?cuisine=${event.detail.value}&apiKey=b3d0fb807dfe4e3aac3b45bc90e0a592`);
+    const url = (`https://api.spoonacular.com/recipes/complexSearch?cuisine=${event.detail.value}&number=12&apiKey=b3d0fb807dfe4e3aac3b45bc90e0a592`);
     const res = await fetch(url);
     const {results} = await res.json()
 
